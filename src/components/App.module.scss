@@ -1,0 +1,26 @@
+.container {
+	overflow: hidden;
+	display: inline-grid;
+	grid-template-columns: auto 1fr auto;
+	align-items: center;
+	border: solid 0.0625rem #000;
+	border-radius: 0.25rem;
+	margin: 1rem;
+}
+
+.button {
+	width: 1.5rem;
+	height: 1.5rem;
+	cursor: pointer;
+	background: #000;
+	color: #fff;
+	border: none;
+	&:hover {
+		background: rgb(#000, 0.8);
+	}
+}
+
+.value {
+	text-align: center;
+	min-width: 2rem;
+}

@@ -1,6 +1,6 @@
 {
 	"scripts": {
-		"start": "webpack serve",
+		"start": "webpack serve --env mode=development",
 		"build:dev": "webpack --env mode=development",
 		"build": "webpack --env mode=production"
 	},
