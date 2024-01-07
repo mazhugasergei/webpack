@@ -14,7 +14,8 @@ export default (env: EnvVariables): webpack.Configuration => {
 		paths: {
 			entry: path.resolve(__dirname, "src", "index.tsx"),
 			html: path.resolve(__dirname, "public", "index.html"),
-			output: path.resolve(__dirname, "build")
+			output: path.resolve(__dirname, "build"),
+			src: path.resolve(__dirname, "src")
 		},
 		mode: env.mode ?? "development"
 	})
