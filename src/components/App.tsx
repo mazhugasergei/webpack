@@ -1,6 +1,7 @@
 import { useState } from "react"
 import classes from "./App.module.scss"
 import { Outlet } from "react-router"
+import img from "@/assets/img.jpeg"
 
 export default () => {
 	const [data, setData] = useState(0)
@@ -15,6 +16,7 @@ export default () => {
 					+
 				</button>
 			</div>
+			<img src={img} alt="" className={classes.img} />
 			<Outlet />
 		</>
 	)
